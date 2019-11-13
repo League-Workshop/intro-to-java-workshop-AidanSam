@@ -19,7 +19,20 @@ public class FourSquare {
 			// 1. Call the drawSquare() method
 	
 			// 8. Turn the robot 90 degrees to the right
-
+		Robot notarobot = new Robot();
+		notarobot.setSpeed(100);
+		notarobot.setPenWidth(5);
+		notarobot.penDown();
+		for (int b=0; b<4; b++) {
+		for (int r=0; r<4; r++) {
+		for (int i=0; i<4; i++) {
+			notarobot.move(200);
+			notarobot.turn(90);
+			notarobot.setRandomPenColor();	
+		}
+		notarobot.turn(-90);
+		}
+		}
 	}
 
 	
@@ -33,7 +46,6 @@ public class FourSquare {
 	public static void main(String[] args) {
 		new FourSquare().go();
 	}
-
 }
 
 

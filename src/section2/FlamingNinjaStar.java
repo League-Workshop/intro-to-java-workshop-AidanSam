@@ -38,7 +38,9 @@ public class FlamingNinjaStar {
 			// 10. Check that your shape is the same as Figure 1. This is one arm of the ninja star.
 			
 			// 11. Color your ninja star like Figure 2.
-		
+		Robot notarobot = new Robot();
+		notarobot.penDown();
+		notarobot.turn(45);
 	}
 
 }
