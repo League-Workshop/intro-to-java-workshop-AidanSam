@@ -6,24 +6,34 @@ public class SmartShapes {
 	
     public static void main(String[] args) throws Exception {
         // 1. Make a new Robot
-
+Robot notarobot = new Robot();
 
         // 3. Put the robot's pen down
-
+notarobot.penDown();
 
         // 6. Make the robot move as fast as possible
-
+notarobot.setSpeed(100);
 
         // 5. Use a for loop to repeat everything below 4 times. 
-
+for(int i=0; i<8974198; i++) {
 
         //         2. Move your robot 200 pixels
 
-
         //         4. Turn the robot 90 degrees to the right
-
-    	
+    	notarobot.move(10);
+    	notarobot.microTurn(1);
+    	notarobot.hide();
+    	notarobot.move(10);
+    	notarobot.turn(11);
+    	notarobot.hide();
+    	notarobot.move(14);
+    	notarobot.microTurn(200);
+    	notarobot.setRandomPenColor();
+    	notarobot.move(5);
+    	notarobot.microTurn(50);
+    	notarobot.hide();
+    	notarobot.microTurn(9);
     		// 7. Change steps 4 and 5 to draw a different shape (e.g. triangle (3-sides), pentagon (5-sides), decagon (10-sides)).
-   
+}
     }
 }
