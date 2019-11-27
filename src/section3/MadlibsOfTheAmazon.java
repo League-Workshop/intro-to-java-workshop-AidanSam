@@ -28,7 +28,7 @@ public class MadlibsOfTheAmazon {
 		// back to the [place]. Good luck!
 		
 		// Make a pop-up for the final story. You can use \n to go to the next line
-		
+		JOptionPane.showMessageDialog(null, "Piranhas are more");
 
 	}
 }
